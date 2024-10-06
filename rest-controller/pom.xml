@@ -4,6 +4,11 @@
   <artifactId>rest-controller</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>rest-controller</name>
+    <parent>
+        <groupId>com.management.user</groupId>
+        <artifactId>User-Management</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>

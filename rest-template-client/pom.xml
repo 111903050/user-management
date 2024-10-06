@@ -4,4 +4,9 @@
   <artifactId>rest-template-client</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>rest-template-client</name>
+  <parent>
+    <groupId>com.management.user</groupId>
+    <artifactId>User-Management</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
 </project>

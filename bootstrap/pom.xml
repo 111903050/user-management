@@ -7,6 +7,11 @@
   <properties>
           <start-class>com.management.user.UserManagementApplication</start-class>
   </properties>
+  <parent>
+    <groupId>com.management.user</groupId>
+    <artifactId>User-Management</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
   <dependencies>
     <dependency>
       <groupId>com.management.user</groupId>
