@@ -4,6 +4,10 @@
   <artifactId>domain</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Domain</name>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
   <description>Business Logic</description>
     <dependencies>
         <dependency>
@@ -62,4 +66,17 @@
             <version>0.4</version> <!-- Check for the latest version -->
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- You can use the latest stable version -->
+                <configuration>
+                    <source>1.8</source> <!-- Set this to 1.8 or higher -->
+                    <target>1.8</target> <!-- Set this to 1.8 or higher -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

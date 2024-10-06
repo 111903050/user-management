@@ -51,7 +51,7 @@ public class UserLoginController {
                     .body(new AuthResponse("error", "Password did not match / Password validity expired", null));
         }catch (Exception e){
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body(new AuthResponse("error", "Password was never created", null));
+                    .body(new AuthResponse("error", e.getMessage(), null));
         }
     }
 }
