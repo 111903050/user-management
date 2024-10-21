@@ -35,6 +35,10 @@ jobs:
         uses: actions/checkout@v3
 
       # Assuming you're using an artifact from the previous build step
+      - name: Debug
+        run: |
+          echo "SCP Command: scp -i my-ec2-key.pem -r ./target/* ec2-user@16.16.186.250:/home/cloudshell-user/service-orchestration/user-management"
+
       - name: Deploy to Server (Example using SCP or SSH)
         run: |
           scp -r ./target/* ec2-user@<16.16.186.250>:/home/cloudshell-user/user-management
