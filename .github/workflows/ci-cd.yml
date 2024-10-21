@@ -37,7 +37,7 @@ jobs:
       # Assuming you're using an artifact from the previous build step
       - name: Deploy to Server (Example using SCP or SSH)
         run: |
-          scp -r ./target/* ec2-user@<16.16.186.250>:/home/cloudshell-user/service-orchestration/user-management
+          scp -r ./target/* ec2-user@<16.16.186.250>:/home/cloudshell-user/user-management
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  # Store SSH key in secrets
           SERVER_USER: ${{ secrets.SERVER_USER }}
